@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+  margin: 0;
+  font-family:'Montserrat';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.navbar navbar-expand-lg navbar-light bg-light{
+    display: flex;
+    justify-content: flex-end;
+    background: rgba(2, 80, 17, 1);
+    padding-inline: 16px;
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 32px;
+}
+
+.collapse navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;
+}
+
+.navbar-nav a {
+    font-size: 18px;
+    padding-block: 16px;
+}
+
+.content-left {
+    width: 500px;
+    height: 300px;
+   
+}
+
+.content-right {
+    width: 500px;
+    height: 300px;
+;
+}
+
+.botao-cadastrar{
+    font-family: 'Montserrat';
+    stroke: none;
+    border-radius: 14px;
+    padding: 10px;
+    width: 200px;
+    border-width: 0;
+    font-size: large;
+    text-align: center;
+
+    
+}
+
+.main {  
+    display: grid;
+    grid-template-columns: 500px 600px;
+    grid-template-rows: 300px 438px 5fr;
+    gap: 10px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". ."
+      "botao botao";
+}
+  
+.botao { 
+    grid-area: botao; 
+}
+  
+.container .texto h1{
+    font-size: 30px;
+    font-weight:500;
+}
+
+.direita .imagem_texto {
+    width: 500px;
+    height: 500px;
+    padding-left: 50px;
+}
+  
+.esquerda_baixa li{
+    font-size: 17px;
+}
+.direita_baixa {
+    padding-top: 280px;
+    padding-left: 200px;
+}
+
+
+.direita_baixa button:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+/* diferenciais */
+
+.diferenciais
+{
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.line-text
+{
+    position: relative;
+    display: inline-block;
+}
+
+.line-text div
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 290px;
+    height: 3px;
+    background:  rgb(170, 199, 118);
+}
+
+.line-text h2
+{
+    color: rgb(119, 80, 113);
+    font-weight: normal;
+    font-size: 27px;
+}
+
+.icones-diferenciais
+{
+    margin-top: 35px;
+    background-color: white; 
+}
+
+.box-icone-single
+{
+    float: left;
+    width: 33.3%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.box-icone-single span
+{
+    color: rgba(2, 80, 17, 1);
+    font-size: 40px;
+}
+
+.box-icone-single p
+{
+    color: black;
+    font-weight: light;
+    font-size: 10px;
+    
+}
+
+/* EQUIPE */
+
+main{
+    width: 96%;
+    margin: 1rem auto 4rem;
+}
+
+.imagem{
+    overflow: hidden;
+    right: auto;
+    justify-content: right;
+}
+
+.container h1{
+    text-align: center;
+    padding: 50px;
+}
+
+.container p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.texto p{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+  
+/* parte dos integrantes */
+
+/*Título da página sobre*/
+.titulo
+{
+    padding: 70px;
+    width: 100%;
+    min-height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+
+.titulo h1
+{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.wrapper{
+    background: linear-gradient(rgba(168, 236, 180, 0.49), rgba(3, 107, 22, 0.9802));
+    width: 95%px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  
+}
+
+h2{
+    text-align: center;
+    color: #ffffff;
+}
+
+.members{
+    display: flex;
+}
+
+.team-mem{
+    margin: 8px;
+}
+
+.members img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+h4, p{
+    text-align: center;
+    font-size: 12px;
+    margin: 7px;
+}
+
+/*Paralax*/
+.paralax
+{
+    padding: 30px 0px;
+    width: 100%;
+    min-height: 400px;
+    background-image: url(/img/carrossel1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+/*Equipe da página sobre*/
+.equipe
+{
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.equipe-circles
+{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipe-circle-single
+{
+    width: 33.3%;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.equipe-circle-single h3
+{
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.equipe-circle-single p{
+    text-align: center;
+}
+
+.avatar2
+{
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 0 auto;
+}
+
+.avatar2-container
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: hotpink;
+    background-size: 100% 100%;
+}
+
+
+/* rodapé */
+.rodape{
+    background-color: rgba(3, 107, 22, 0.9802);
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+.rodape p{
+    margin-bottom: 5px;
+    font-family: 'Montserrat';
+}
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+.rodape-direitos{
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+/*mobile*/
+@media (max-width: 768px) {
+    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+    .rodape-div{
+        padding: 60px 0px 40px 0px;
+    }
+}

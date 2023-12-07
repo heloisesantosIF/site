@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+/* Menu */
+
+.header{
+  padding: 8px 0;
+  height: 90px;
+}
+
+.logo{
+  float: left;
+}
+
+.logo img{
+  height: 70px;
+
+}
+
+/* .nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items a {
+  margin-left: 20px;
+}
+
+.nav-items a img {
+  width: 30px;
+} */
+
+.menu-desk{
+  float: right;
+}
+
+.menu-desk{
+  position: relative;
+  margin-top: 30px;
+}
+
+.menu-desk a{
+  color: green;
+  text-decoration: none;
+}
+
+.menu-desk li{
+  padding: 0 10px;
+  font-weight: lighter;
+  display: inline-block;
+}
+
+.menu-desk li.selected{
+  font-weight: bold;
+}
+
+.menu-desk a:hover{
+  text-decoration: underline;
+}
+
+main{
+  flex: 1;
+  padding: 20px;
+}
+
+h1{
+  /* font-family:  Helvetica, sans-serif; */
+  margin-bottom: 40px;
+  text-align: center;
+  color: rgb(1, 87, 1);
+}
+
+.models{
+  display: none;
+}
+
+.modelo-area{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.modelo-item{
+  text-align: center;
+  max-width: 250px;
+  /* font-family: "Lato", Helvetica, sans-serif; */
+  margin: 0 auto 50px auto;
+  
+}
+
+.modelo-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(4, 71, 4);
+}
+
+.modelo-item-img {
+  width: 230px;
+  height: 200px;
+  background-color: #eee;
+}
+
+.modelo-item-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 3%;
+  box-shadow: 0px 10px 50px rgb(0, 0, 0, 0.2);
+}
+
+.modelo-item a:hover .modelo-item-add{
+  background-color: rgb(25, 207, 192);
+}
+
+.modelo-item-price{
+  font-size: 15px;
+  color: #333;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.modelo-item-name{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-top: 130px;
+  color: rgb(4, 71, 4);
+}
+
+.cart-area{
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.cart-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.cart-item-name {
+  flex: 1;
+}
+
+.cart-item-qtarea {
+  display: inline-flex;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 30px;
+}
+
+@media (max-width: 1000px) {
+  .modelo-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 840px) {
+  body {
+    flex-direction: column;
+  }
+  .modelo-area {
+    display: block;
+  }
+  .modelo-item {
+    max-width: 100%;
+  }
+  header {
+    display: flex;
+  }
+  main {
+    padding-top: 60px;
+  }
+
+  aside {
+    width: auto;
+    position: fixed;
+    left: 100vw;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease 0.2s;
+  }
+  aside.show {
+    width: auto;
+  }
+  .cart-area {
+    width: 100vw;
+  }
+
+  .menu-closer {
+    display: block;
+  }
+
+  .modeloWindowArea {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .modeloWindowBody {
+    width: 100vw;
+    display: block;
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .modeloBig img {
+    width: 75%;
+    height: auto;
+  }
+
+  .modeloInfo h1 {
+    margin-top: 20px;
+  }
+
+  .modeloInfo-qtarea {
+    height: 60px;
+  }
+  .modeloInfo-qtarea button {
+    font-size: 25px;
+    padding: 0px 25px;
+  }
+  .modeloInfo-qt {
+    line-height: 60px;
+    font-size: 20px;
+  }
+  .modeloInfo-addButton {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  .modeloInfo-cancelButton {
+    display: none;
+  }
+  .modeloInfo-cancelMobileButton {
+    display: block;
+  }
+}

@@ -1,0 +1,72 @@
+.w33
+{
+    float: left;
+    width: 50%;
+}
+
+.footer1 
+{
+    background: rgba(2, 80, 17, 1);
+    padding: 20px 0px;
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 255) ;
+
+}
+
+.footer1 h2
+{
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.footer1 a
+{
+    display: block;
+    color: black;
+    margin-top: 10px;
+}
+
+.group-icons a 
+{
+    display: inline-block;
+    margin: 15px 10px;
+    font-family: 'Montserrat';
+}
+
+.footer2
+{
+    padding: 15px 0px;
+    background: rgb(33, 158, 58);
+    text-align: center;
+    color: white;
+   
+}
+
+#group-icons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#group-icons .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-0);
+    border-radius: 50%;
+} 
+
+/*Responsividade / Correção de Bug*/
+.clear
+{
+    clear: both;
+}
+
+@media screen and (max-width: 426px) {
+    #footer-cotent{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
